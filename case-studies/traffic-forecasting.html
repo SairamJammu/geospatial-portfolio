@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles.css?v=11" />
+    <link rel="stylesheet" href="../styles.css?v=12" />
   </head>
   <body>
     <header class="site-header">
@@ -44,7 +44,8 @@
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="https://github.com/SairamJammu/short-term-traffic-forecasting" target="_blank" rel="noreferrer">View Code</a>
-            <a class="secondary-button is-placeholder" href="#">Live Demo Placeholder</a>
+            <a class="secondary-button" href="https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/notebooks" target="_blank" rel="noreferrer">View Notebook</a>
+            <a class="secondary-button" href="https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/results" target="_blank" rel="noreferrer">View Results</a>
             <a class="secondary-button" href="../index.html#projects">Back to Portfolio</a>
           </div>
         </div>
@@ -122,6 +123,36 @@
               The project compares MAE, RMSE, and MAPE across forecast horizons. The strongest Graph WaveNet
               variant reports approximately 3.53 MAE at the 60-minute horizon with MAPE near 9.88%.
             </p>
+            <table class="metrics-table">
+              <thead>
+                <tr>
+                  <th>Model / Evidence</th>
+                  <th>60-min MAE</th>
+                  <th>60-min RMSE</th>
+                  <th>60-min MAPE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Graph WaveNet + weather/road features</td>
+                  <td>3.53</td>
+                  <td>7.28</td>
+                  <td>10.06%</td>
+                </tr>
+                <tr>
+                  <td>Graph WaveNet + GCN road injection</td>
+                  <td>3.53</td>
+                  <td>7.30</td>
+                  <td>9.88%</td>
+                </tr>
+                <tr>
+                  <td>LSTM / GRU / TCN baselines</td>
+                  <td>4.47-4.51</td>
+                  <td>7.71-7.89</td>
+                  <td>12.38-12.67%</td>
+                </tr>
+              </tbody>
+            </table>
             <p>
               The main result is not just a score: the project shows how traffic sensors, road-network structure,
               and weather/road features can be combined into a more practical urban analytics workflow.
@@ -164,18 +195,24 @@
               <p>Model comparison chart showing temporal baselines and graph-based forecasting variants.</p>
             </div>
           </div>
-          <div class="preview-panel placeholder-preview">
-            <div class="placeholder-box">Dashboard Screenshot Placeholder</div>
+          <div class="preview-panel">
+            <img
+              src="https://raw.githubusercontent.com/SairamJammu/short-term-traffic-forecasting/main/results/figures/fig_horizon_comparison.png"
+              alt="Forecast horizon comparison"
+            />
             <div class="card-body">
-              <h3>Interactive Dashboard</h3>
-              <p>Replace this block with a Streamlit, Folium, or dashboard screenshot when the prototype is published.</p>
+              <h3>Forecast Horizon Comparison</h3>
+              <p>Evaluation visual showing how model performance changes from short to longer forecast horizons.</p>
             </div>
           </div>
-          <div class="preview-panel placeholder-preview">
-            <div class="placeholder-box">Live Demo Placeholder</div>
+          <div class="preview-panel asset-link-panel">
             <div class="card-body">
-              <h3>Prototype Link</h3>
-              <p>Use this area for a deployed dashboard link or a short demo video when available.</p>
+              <h3>Interactive Animation Assets</h3>
+              <p>The repository includes HTML traffic animation files and a recorded demo for reviewing the GIS-style prototype work.</p>
+              <div class="card-actions">
+                <a class="card-link" href="https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/demos" target="_blank" rel="noreferrer">Open Demos</a>
+                <a class="card-link" href="https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/media" target="_blank" rel="noreferrer">Open Media</a>
+              </div>
             </div>
           </div>
         </div>

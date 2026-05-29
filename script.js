@@ -20,8 +20,9 @@ const projects = [
     tags: ["Graph WaveNet", "METR-LA", "207 sensors", "MAE@60 3.53", "MAPE@60 9.88%"],
     links: [
       { label: "View Code", url: "https://github.com/SairamJammu/short-term-traffic-forecasting" },
-      { label: "Live Demo Placeholder", url: "#" },
+      { label: "View Notebook", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/notebooks" },
       { label: "Read Case Study", url: "case-studies/traffic-forecasting.html" },
+      { label: "View Results", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/results" },
     ],
   },
   {
@@ -45,8 +46,8 @@ const projects = [
     tags: ["U-Net", "DeepLabV3+", "IoU 0.2954", "F1 0.4556", "Remote sensing"],
     links: [
       { label: "View Code", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction" },
-      { label: "Live Demo Placeholder", url: "#" },
-      { label: "Read Case Study", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-report.pdf" },
+      { label: "View Report", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-report.pdf" },
+      { label: "View Presentation", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-presentation.pdf" },
     ],
   },
   {
@@ -70,8 +71,8 @@ const projects = [
     tags: ["XGBoost", "R-squared 0.7521", "RMSE 9,279.50", "Leaflet", "GIS outputs"],
     links: [
       { label: "View Code", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone" },
-      { label: "Live Demo Placeholder", url: "#" },
-      { label: "Read Case Study", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/blob/main/report/WOMart-GIS-Sales-Forecasting.html" },
+      { label: "View Report", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/blob/main/report/WOMart-GIS-Sales-Forecasting.html" },
+      { label: "View GIS Outputs", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/tree/main/gis-outputs" },
     ],
   },
   {
@@ -95,8 +96,8 @@ const projects = [
     tags: ["Power BI", "DAX", "$223K sales", "$87K gross margin", "41% margin"],
     links: [
       { label: "View Code", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard" },
-      { label: "Live Demo Placeholder", url: "#" },
-      { label: "Read Case Study", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/Presentation/KNFS_Report.pdf" },
+      { label: "View Report", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/Presentation/KNFS_Report.pdf" },
+      { label: "View Dashboard File", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/dashboard/KNFS_Dashboard.pbix" },
     ],
   },
   {
@@ -120,8 +121,8 @@ const projects = [
     tags: ["NLP", "Text classification", "Neural networks", "Jupyter", "Model reporting"],
     links: [
       { label: "View Code", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks" },
-      { label: "Live Demo Placeholder", url: "#" },
-      { label: "Read Case Study Placeholder", url: "#" },
+      { label: "View Assignment", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks/tree/main/Assignment-2" },
+      { label: "View Repository Files", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks" },
     ],
   },
 ];
@@ -162,7 +163,7 @@ function projectCard(project) {
       <div class="tag-list">${project.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
       <div class="card-actions">
         ${project.links
-          .map((link) => `<a class="card-link${link.url === "#" ? " is-placeholder" : ""}" href="${link.url}" ${link.url === "#" ? "" : 'target="_blank" rel="noreferrer"'}>${link.label}</a>`)
+          .map((link) => `<a class="card-link" href="${link.url}" ${link.url.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""}>${link.label}</a>`)
           .join("")}
       </div>
     </div>
@@ -195,8 +196,8 @@ filterButtons.forEach((button) => {
 
 const roles = [
   "Geospatial Data Analyst",
-  "GeoAI Practitioner",
-  "Spatial ML Builder",
+  "GeoAI Project Builder",
+  "Spatial ML Learner",
   "GIS + Python Analyst",
 ];
 

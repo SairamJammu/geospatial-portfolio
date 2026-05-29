@@ -62,9 +62,9 @@ git push origin main
 
 GitHub Pages will rebuild automatically after the push.
 
-## Placeholder Items To Replace
+## Remaining Assets To Improve
 
-- Resume button link in the contact section
-- Live demo links for project cards
-- Dashboard screenshot placeholders in the traffic case study
-- Any future Streamlit/Folium prototype link for the traffic intelligence project
+- Add a direct resume PDF link when the final resume is ready to publish.
+- Add a deployed Streamlit/Folium link if the traffic dashboard prototype is published.
+- Replace any project preview images when stronger screenshots are available.
+- Keep project metrics tied to repository README files, reports, notebooks, or dashboards.
