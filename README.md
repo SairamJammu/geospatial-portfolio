@@ -1,6 +1,6 @@
-# Sairam Jammu Geospatial Analytics Portfolio
+# Sairam Jammu Analytics Portfolio
 
-Live portfolio site for Sairam Jammu's geospatial analytics, machine learning, forecasting, and business intelligence work.
+Live portfolio site for Sairam Jammu's business analytics, geospatial AI, machine learning, forecasting, and business intelligence work.
 
 View the site: [sairamjammu.github.io/geospatial-portfolio](https://sairamjammu.github.io/geospatial-portfolio/)
 
@@ -11,6 +11,8 @@ The site presents applied analytics work across three tracks:
 - Geospatial intelligence and remote sensing
 - Forecasting and machine learning
 - Decision-support dashboards and business intelligence
+
+The portfolio is designed as a recruiter-facing project hub: each project highlights the problem, method, evidence, and business value quickly.
 
 ## Featured Projects
 
@@ -25,8 +27,8 @@ The site presents applied analytics work across three tracks:
 
 | File | Purpose |
 |---|---|
-| `index.html` | Single-page portfolio content and project links |
-| `styles.css` | Responsive visual system and layout |
+| `index.html` | Single-page portfolio content, project evidence, metrics, and links |
+| `styles.css` | Responsive visual system, layout, and recruiter-ready presentation styling |
 | `script.js` | Small scroll-state enhancement for the header |
 
 ## Design Notes
