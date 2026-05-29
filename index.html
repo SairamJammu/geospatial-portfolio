@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
   </head>
   <body>
     <header class="site-header">
@@ -230,6 +230,45 @@
             <button class="filter-button" type="button" data-filter="NLP + Neural Networks">NLP + Neural Nets</button>
           </div>
         </div>
+        <div class="project-grid project-spotlight-grid" id="trafficProjectSpotlight">
+          <article class="project-card" data-category="Forecasting + ML">
+            <div
+              class="project-image"
+              style="background-image: linear-gradient(rgba(7, 16, 19, 0.08), rgba(7, 16, 19, 0.42)), url('https://raw.githubusercontent.com/SairamJammu/short-term-traffic-forecasting/main/results/figures/fig_full_benchmark_comparison.png')"
+            ></div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span>Forecasting + ML</span>
+                <span>Python / PyTorch</span>
+                <span>May 2026</span>
+              </div>
+              <h3>
+                <a
+                  class="project-title-link"
+                  href="https://github.com/SairamJammu/short-term-traffic-forecasting"
+                  target="_blank"
+                  rel="noreferrer"
+                >Short-Term Traffic Forecasting</a>
+              </h3>
+              <p>
+                Spatiotemporal deep learning project forecasting Los Angeles highway speeds with METR-LA
+                sensors, temporal baselines, and Graph WaveNet variants.
+              </p>
+              <div class="impact-list">
+                <p><strong>Business question:</strong> Can road-network graph structure improve 15, 30, and 60 minute traffic-speed forecasts compared with temporal-only models?</p>
+                <p><strong>Decision value:</strong> Demonstrates graph neural network forecasting, benchmark thinking, model ablation, and transportation analytics communication.</p>
+              </div>
+              <div class="tag-list">
+                <span>Graph WaveNet</span><span>METR-LA</span><span>207 sensors</span><span>MAE@60 3.53</span><span>MAPE@60 9.88%</span>
+              </div>
+              <div class="card-actions">
+                <a class="card-link" href="https://github.com/SairamJammu/short-term-traffic-forecasting" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="card-link" href="https://github.com/SairamJammu/short-term-traffic-forecasting/blob/main/notebooks/short_term_traffic_forecasting_final_project.ipynb" target="_blank" rel="noreferrer">Notebook</a>
+                <a class="card-link" href="https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/results" target="_blank" rel="noreferrer">Results</a>
+              </div>
+            </div>
+          </article>
+        </div>
         <div class="project-grid" id="projectGrid"></div>
       </section>
 
@@ -295,6 +334,6 @@
       <span>Sairam Jammu</span>
     </footer>
 
-    <script src="script.js?v=9"></script>
+    <script src="script.js?v=10"></script>
   </body>
 </html>

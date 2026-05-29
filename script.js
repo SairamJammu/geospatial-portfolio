@@ -113,6 +113,7 @@ const projects = [
 const header = document.querySelector(".site-header");
 const featuredProjects = document.querySelector("#featuredProjects");
 const projectGrid = document.querySelector("#projectGrid");
+const trafficProjectSpotlight = document.querySelector("#trafficProjectSpotlight");
 const filterButtons = document.querySelectorAll(".filter-button");
 const focusCards = document.querySelectorAll("[data-focus-filter]");
 const typedRole = document.querySelector("#typedRole");
@@ -154,6 +155,7 @@ function projectCard(project, featured = false) {
 function renderProjects(filter = "all") {
   projectGrid.innerHTML = "";
   projects
+    .filter((project) => project.repo !== "short-term-traffic-forecasting")
     .filter((project) => filter === "all" || project.category === filter)
     .forEach((project) => projectGrid.appendChild(projectCard(project)));
 }
@@ -162,6 +164,9 @@ function setActiveFilter(filter) {
   filterButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.filter === filter);
   });
+  if (trafficProjectSpotlight) {
+    trafficProjectSpotlight.hidden = !(filter === "all" || filter === "Forecasting + ML");
+  }
   renderProjects(filter);
 }
 
