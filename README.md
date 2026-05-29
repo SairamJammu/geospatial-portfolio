@@ -1,6 +1,6 @@
 # Sairam Jammu Analytics Portfolio
 
-Recruiter-ready portfolio site for Sairam Jammu's business analytics, geospatial AI, machine learning, forecasting, and business intelligence work.
+Recruiter-ready portfolio site for Sairam Jammu's business analytics, geospatial AI, machine learning, forecasting, deep learning, and business intelligence work.
 
 View the site: [sairamjammu.github.io/geospatial-portfolio](https://sairamjammu.github.io/geospatial-portfolio/)
 
@@ -9,7 +9,7 @@ View the site: [sairamjammu.github.io/geospatial-portfolio](https://sairamjammu.
 The site presents applied analytics work across three employer-facing tracks:
 
 - Geospatial intelligence and remote sensing
-- Forecasting and machine learning
+- Forecasting, graph neural networks, and machine learning
 - Decision-support dashboards and business intelligence
 
 The portfolio is designed as a recruiter-facing project hub. Each project highlights the business question, method, evidence, metrics, decision value, tools, and direct GitHub artifacts.
@@ -18,6 +18,7 @@ The portfolio is designed as a recruiter-facing project hub. Each project highli
 
 | Project | Focus | Repository |
 |---|---|---|
+| Short-Term Traffic Forecasting | Spatiotemporal traffic forecasting with Graph WaveNet | [GitHub](https://github.com/SairamJammu/short-term-traffic-forecasting) |
 | Deep Learning Road Network Extraction | Semantic segmentation for aerial imagery | [GitHub](https://github.com/SairamJammu/deep-learning-road-network-extraction) |
 | WOMart Sales Forecasting Capstone | Retail forecasting with GIS-enhanced outputs | [GitHub](https://github.com/SairamJammu/womart-sales-forecasting-capstone) |
 | KNFS Operations and Sales Dashboard | Power BI dashboard for sales and inventory decisions | [GitHub](https://github.com/SairamJammu/knfs-operations-sales-dashboard) |
