@@ -22,6 +22,28 @@ const projects = [
     featured: true,
   },
   {
+    title: "Short-Term Traffic Forecasting",
+    repo: "short-term-traffic-forecasting",
+    category: "Forecasting + ML",
+    language: "Python / PyTorch",
+    updated: "May 2026",
+    url: "https://github.com/SairamJammu/short-term-traffic-forecasting",
+    image: "https://raw.githubusercontent.com/SairamJammu/short-term-traffic-forecasting/main/results/figures/fig_full_benchmark_comparison.png",
+    summary:
+      "Spatiotemporal deep learning project forecasting Los Angeles highway speeds with METR-LA sensors, temporal baselines, and Graph WaveNet variants.",
+    businessQuestion:
+      "Can road-network graph structure improve 15, 30, and 60 minute traffic-speed forecasts compared with temporal-only models?",
+    decisionValue:
+      "Demonstrates graph neural network forecasting, benchmark thinking, model ablation, and transportation analytics communication.",
+    tags: ["Graph WaveNet", "METR-LA", "207 sensors", "MAE@60 3.53", "MAPE@60 9.88%"],
+    links: [
+      { label: "GitHub", url: "https://github.com/SairamJammu/short-term-traffic-forecasting" },
+      { label: "Notebook", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/blob/main/notebooks/short_term_traffic_forecasting_final_project.ipynb" },
+      { label: "Results", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/results" },
+    ],
+    featured: true,
+  },
+  {
     title: "GIS-Enhanced WOMart Sales Forecasting",
     repo: "womart-sales-forecasting-capstone",
     category: "Forecasting + ML",
@@ -163,6 +185,7 @@ const roles = [
   "Geospatial AI Analyst",
   "Business Intelligence Builder",
   "Forecasting and ML Practitioner",
+  "Traffic Analytics Modeler",
   "Decision Analytics Professional",
 ];
 
