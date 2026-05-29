@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sairam Jammu | Analytics, Geospatial AI, and BI Portfolio</title>
+    <title>Sairam Jammu | Geospatial AI, Forecasting, and BI Portfolio</title>
     <meta
       name="description"
-      content="Portfolio for Sairam Jammu: geospatial AI, machine learning, forecasting, Power BI dashboards, and applied business analytics projects."
+      content="Recruiter-ready analytics portfolio for Sairam Jammu: geospatial AI, machine learning, sales forecasting, Power BI dashboards, NLP, and decision intelligence."
     />
     <meta property="og:title" content="Sairam Jammu | Analytics Portfolio" />
     <meta
       property="og:description"
-      content="Applied analytics portfolio covering geospatial AI, retail forecasting, NLP, and decision-support dashboards."
+      content="Applied analytics portfolio covering geospatial AI, retail forecasting, NLP, Power BI, and business decision-support projects."
     />
     <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:image" content="assets/images/portfolio-hero.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body>
     <header class="site-header">
@@ -24,242 +31,270 @@
         <span>Sairam Jammu</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#impact">Impact</a>
-        <a href="#projects">Projects</a>
+        <a href="#home">Home</a>
+        <a href="#value">Value</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-action" href="https://github.com/SairamJammu" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="header-button" href="https://github.com/SairamJammu" target="_blank" rel="noreferrer">GitHub</a>
     </header>
 
-    <main id="home">
-      <section class="hero" aria-label="Portfolio introduction">
+    <main>
+      <section class="hero" id="home">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
         <div class="hero-copy">
-          <p class="eyebrow">Business Analytics | Geospatial AI | Decision Intelligence</p>
-          <h1>Sairam Jammu</h1>
-          <p class="hero-title">I turn messy data into models, maps, and dashboards that people can act on.</p>
-          <p class="hero-text">
-            Business Analytics graduate student with project experience in geospatial machine learning,
-            retail forecasting, Power BI reporting, NLP, and applied model documentation.
+          <p class="welcome-badge">Welcome to my portfolio</p>
+          <p class="eyebrow">Business Analytics | Geospatial AI | BI Dashboards</p>
+          <h1>Hi, I'm Sairam <span id="typedRole">Analytics Professional</span></h1>
+          <p class="hero-lede">
+            I build decision-ready analytics projects that connect modeling, maps, dashboards, and business
+            storytelling. My work spans road extraction from aerial imagery, GIS-enhanced retail forecasting,
+            Power BI operating dashboards, and neural-network NLP experimentation.
           </p>
-          <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="mailto:jammusairam3@gmail.com">Contact Me</a>
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects">Review Portfolio</a>
+            <a class="secondary-button" href="https://github.com/SairamJammu?tab=repositories" target="_blank" rel="noreferrer">
+              Verify on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Analytics and geospatial portfolio visual">
+          <img src="assets/images/portfolio-hero.png" alt="Laptop with GIS dashboard, map layers, charts, and forecasting visuals" />
+          <div class="visual-caption">
+            <span>Analytics + Geospatial AI</span>
+            <strong>Forecasts, maps, models, and dashboards built for decision support.</strong>
           </div>
         </div>
       </section>
 
-      <section class="proof-strip" id="impact" aria-label="Portfolio highlights">
+      <section class="proof-strip" aria-label="Portfolio highlights">
         <article>
           <span>4</span>
-          <p>Portfolio-ready analytics projects across geospatial AI, forecasting, BI, and NLP.</p>
-        </article>
-        <article>
-          <span>41%</span>
-          <p>Gross margin KPI surfaced in the KNFS Power BI operating dashboard.</p>
+          <p>Flagship projects across geospatial AI, forecasting, BI, and NLP.</p>
         </article>
         <article>
           <span>0.752</span>
-          <p>R-squared from the GIS-enhanced WOMart sales forecasting model.</p>
+          <p>R-squared from the GIS-enhanced WOMart XGBoost forecast model.</p>
         </article>
         <article>
-          <span>0.4556</span>
-          <p>F1 score from the strongest road segmentation experiment.</p>
+          <span>41%</span>
+          <p>Gross margin KPI surfaced in the KNFS Power BI executive dashboard.</p>
+        </article>
+        <article>
+          <span>1,171</span>
+          <p>Image-mask pairs used for road extraction model comparison.</p>
         </article>
       </section>
 
-      <section class="section intro-section">
+      <section class="section intro-band" id="value">
         <div class="section-heading">
-          <p class="eyebrow">What I Build</p>
-          <h2>Applied analytics work with a clear line from data to decision.</h2>
-          <p>
-            My strongest projects combine technical modeling with business framing: clean the data, choose the
-            right analytical method, build an interpretable output, and explain why the result matters.
+          <p class="eyebrow">Portfolio Focus</p>
+          <h2>Three evidence tracks behind my analytics work.</h2>
+          <p class="section-lede">
+            This site is organized for recruiters and hiring managers: each section shows what I can build,
+            what problem it solves, and where the evidence lives.
           </p>
         </div>
         <div class="focus-grid">
-          <article class="focus-card">
+          <a class="focus-card" href="#projects" data-focus-filter="Geospatial AI">
             <span>01</span>
-            <h3>Geospatial Intelligence</h3>
-            <p>Remote sensing, semantic segmentation, road extraction, and GIS-oriented problem framing.</p>
-          </article>
-          <article class="focus-card">
+            <h3>Geospatial intelligence</h3>
+            <p>Remote sensing, semantic segmentation, GIS maps, spatial features, and location-aware decision support.</p>
+          </a>
+          <a class="focus-card" href="#projects" data-focus-filter="Forecasting + ML">
             <span>02</span>
             <h3>Forecasting and ML</h3>
-            <p>Retail demand forecasting, feature engineering, validation metrics, and model comparison.</p>
-          </article>
-          <article class="focus-card">
+            <p>XGBoost forecasting, feature engineering, model validation, metric reporting, and business interpretation.</p>
+          </a>
+          <a class="focus-card" href="#projects" data-focus-filter="BI & Dashboards">
             <span>03</span>
-            <h3>Decision Products</h3>
-            <p>Power BI and Shiny dashboards built around operating questions, KPIs, and recommendations.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section project-section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects with evidence a reviewer can inspect quickly.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80"
-              alt="Aerial view of road networks and city blocks"
-            />
-            <div class="project-body">
-              <p class="project-type">Geospatial AI</p>
-              <h3>Deep Learning Road Network Extraction</h3>
-              <p>
-                Semantic segmentation project using U-Net, DeepLabV3+, PSPNet, and FPN to identify road pixels
-                from aerial imagery.
-              </p>
-              <dl class="project-evidence">
-                <div><dt>Best result</dt><dd>U-Net, F1 0.4556</dd></div>
-                <div><dt>Use case</dt><dd>GIS mapping and infrastructure extraction</dd></div>
-              </dl>
-              <a href="https://github.com/SairamJammu/deep-learning-road-network-extraction" target="_blank" rel="noreferrer">View Repository</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-body">
-              <p class="project-type">Forecasting + GIS</p>
-              <h3>WOMart Sales Forecasting Capstone</h3>
-              <p>
-                Retail sales forecasting workflow extended with simulated spatial coordinates, regional summaries,
-                interactive maps, and forecast-ready outputs.
-              </p>
-              <dl class="project-evidence">
-                <div><dt>Model</dt><dd>XGBoost with GIS features</dd></div>
-                <div><dt>Validation</dt><dd>R-squared 0.7521</dd></div>
-              </dl>
-              <a href="https://github.com/SairamJammu/womart-sales-forecasting-capstone" target="_blank" rel="noreferrer">View Repository</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-body">
-              <p class="project-type">Business Intelligence</p>
-              <h3>KNFS Operations and Sales Dashboard</h3>
-              <p>
-                Power BI decision-support dashboard for sales, COGS, gross margin, inventory aging, department
-                performance, and reorder priorities.
-              </p>
-              <dl class="project-evidence">
-                <div><dt>Tool</dt><dd>Power BI + DAX</dd></div>
-                <div><dt>Output</dt><dd>Executive KPI dashboard</dd></div>
-              </dl>
-              <a href="https://github.com/SairamJammu/knfs-operations-sales-dashboard" target="_blank" rel="noreferrer">View Repository</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-body">
-              <p class="project-type">NLP + Neural Networks</p>
-              <h3>Advanced ML Coursework Portfolio</h3>
-              <p>
-                Coursework evidence set covering IMDB sentiment classification, notebook-based experimentation,
-                technical reporting, and model communication.
-              </p>
-              <dl class="project-evidence">
-                <div><dt>Focus</dt><dd>Text classification</dd></div>
-                <div><dt>Format</dt><dd>Notebook and report deliverables</dd></div>
-              </dl>
-              <a href="https://github.com/SairamJammu/imdb-sentiment-neural-networks" target="_blank" rel="noreferrer">View Repository</a>
-            </div>
-          </article>
+            <h3>Dashboards and decision products</h3>
+            <p>Power BI, DAX, KPIs, inventory analytics, executive reporting, and stakeholder-ready summaries.</p>
+          </a>
         </div>
       </section>
 
       <section class="section experience-section" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Experience Signal</p>
-          <h2>Graduate analytics work shaped into portfolio evidence.</h2>
+          <h2>Graduate analytics training shaped into portfolio evidence.</h2>
         </div>
-        <div class="timeline">
-          <article class="timeline-card">
-            <div class="timeline-meta">Kent State University</div>
-            <h3>M.S. Business Analytics</h3>
+        <div class="experience-layout">
+          <div class="experience-stack">
+            <article class="experience-card">
+              <div class="experience-topline">
+                <div>
+                  <h3>M.S. Business Analytics</h3>
+                  <p class="role-meta">Kent State University | Ohio, USA</p>
+                </div>
+                <span>Analytics Graduate</span>
+              </div>
+              <p class="experience-summary">
+                Built applied coursework and capstone projects across machine learning, visualization, forecasting,
+                business intelligence, data mining, and analytics communication.
+              </p>
+              <div class="experience-columns">
+                <div>
+                  <h4>Technical focus</h4>
+                  <p>Python, R, XGBoost, PyTorch, scikit-learn, Power BI, DAX, R Markdown, and GIS workflows.</p>
+                </div>
+                <div>
+                  <h4>Business focus</h4>
+                  <p>Translate model output into planning, inventory, profitability, and operational decisions.</p>
+                </div>
+              </div>
+              <div class="experience-points">
+                <span>Machine learning</span>
+                <span>Forecasting</span>
+                <span>Business intelligence</span>
+                <span>Data visualization</span>
+                <span>Technical reporting</span>
+              </div>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-topline">
+                <div>
+                  <h3>Portfolio Operating Style</h3>
+                  <p class="role-meta">Modeling, dashboards, and documentation</p>
+                </div>
+                <span>Recruiter Evidence</span>
+              </div>
+              <p class="experience-summary">
+                I structure projects so reviewers can quickly inspect the problem, data, methods, metrics,
+                artifacts, and business value without hunting through notebooks.
+              </p>
+              <div class="experience-columns">
+                <div>
+                  <h4>Evidence</h4>
+                  <p>README summaries, reports, screenshots, model metrics, dashboards, and exported outputs.</p>
+                </div>
+                <div>
+                  <h4>Decision value</h4>
+                  <p>Every project explains the operational question and the decision the analysis supports.</p>
+                </div>
+              </div>
+              <div class="experience-points">
+                <span>GitHub documentation</span>
+                <span>Model evaluation</span>
+                <span>Dashboard design</span>
+                <span>Stakeholder framing</span>
+              </div>
+            </article>
+          </div>
+
+          <aside class="education-card">
+            <p class="eyebrow">Open To</p>
+            <h3>Analytics, BI, ML, and geospatial data roles</h3>
             <p>
-              Graduate work across machine learning, visualization, predictive modeling, business intelligence,
-              and applied analytics communication.
+              Best-fit roles include data analyst, business intelligence analyst, GIS analyst, machine learning
+              analyst, reporting analyst, and analytics intern/co-op positions.
             </p>
-            <div class="tag-row">
-              <span>Machine Learning</span>
-              <span>Data Visualization</span>
-              <span>Business Analytics</span>
-              <span>Project Reports</span>
+            <div class="course-markers">
+              <div class="course-marker"><span>Power BI Dashboards</span></div>
+              <div class="course-marker"><span>Python / R Analytics</span></div>
+              <div class="course-marker"><span>Forecasting Models</span></div>
+              <div class="course-marker"><span>Geospatial Analysis</span></div>
+              <div class="course-marker"><span>Machine Learning</span></div>
+              <div class="course-marker"><span>Technical Storytelling</span></div>
             </div>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-meta">Technical Strength</div>
-            <h3>Modeling With Communication</h3>
-            <p>
-              I focus on making models inspectable: assumptions, metrics, outputs, and business value are
-              documented so the work is easier to review and reuse.
-            </p>
-            <div class="tag-row">
-              <span>Python</span>
-              <span>R</span>
-              <span>PyTorch</span>
-              <span>XGBoost</span>
-            </div>
-          </article>
-          <article class="timeline-card">
-            <div class="timeline-meta">Decision Products</div>
-            <h3>Dashboards and Reports</h3>
-            <p>
-              I build dashboards and reports around operating questions: sales performance, stock risk, forecast
-              demand, regional variation, and action priorities.
-            </p>
-            <div class="tag-row">
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>R Shiny</span>
-              <span>Leaflet</span>
-            </div>
-          </article>
+          </aside>
         </div>
+      </section>
+
+      <section class="section featured-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Repositories</p>
+          <h2>Priority projects for analytics, BI, geospatial, and ML roles.</h2>
+        </div>
+        <div class="featured-grid" id="featuredProjects"></div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading project-heading">
+          <div>
+            <p class="eyebrow">Recruiter-Ready Project Evidence</p>
+            <h2>Projects organized by employer-relevant capability.</h2>
+            <p class="section-lede">
+              Use the filters to scan by role fit. Each project includes the business question, decision value,
+              tools, metrics, and direct GitHub evidence.
+            </p>
+          </div>
+          <div class="filters" aria-label="Project filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="Geospatial AI">Geospatial AI</button>
+            <button class="filter-button" type="button" data-filter="Forecasting + ML">Forecasting + ML</button>
+            <button class="filter-button" type="button" data-filter="BI & Dashboards">BI & Dashboards</button>
+            <button class="filter-button" type="button" data-filter="NLP + Neural Networks">NLP + Neural Nets</button>
+          </div>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
       </section>
 
       <section class="section skills-section" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">Technical Stack</p>
-          <h2>Tools grouped by the work they support.</h2>
+          <p class="eyebrow">Analyst Toolkit</p>
+          <h2>Skills reflected across the portfolio.</h2>
+          <p class="section-lede">
+            My strongest value is combining analytical rigor with outputs people can review, trust, and use.
+          </p>
         </div>
-        <div class="skills-grid">
-          <article>
-            <h3>Geospatial and Imagery</h3>
-            <p>GIS concepts, remote sensing, aerial imagery, semantic segmentation, road extraction.</p>
+        <div class="skills-flow">
+          <article class="skill-card">
+            <span class="skill-step">01</span>
+            <h3>Geospatial and imagery analytics</h3>
+            <p>Road extraction, aerial imagery, semantic segmentation, interactive maps, spatial features, and GIS reporting.</p>
+            <div class="skill-tags">
+              <span>GIS</span><span>Remote sensing</span><span>Leaflet</span><span>OpenCV</span><span>Segmentation</span>
+            </div>
           </article>
-          <article>
-            <h3>Machine Learning</h3>
-            <p>Python, PyTorch, scikit-learn, XGBoost, LightGBM, ARIMA, model evaluation.</p>
+          <article class="skill-card">
+            <span class="skill-step">02</span>
+            <h3>Machine learning and forecasting</h3>
+            <p>Model comparison, feature engineering, classification, regression, validation metrics, and forecast interpretation.</p>
+            <div class="skill-tags">
+              <span>Python</span><span>R</span><span>XGBoost</span><span>PyTorch</span><span>scikit-learn</span>
+            </div>
           </article>
-          <article>
-            <h3>Analytics Products</h3>
-            <p>Power BI, DAX, R Shiny, Leaflet, KPI design, dashboard storytelling.</p>
+          <article class="skill-card">
+            <span class="skill-step">03</span>
+            <h3>Business intelligence products</h3>
+            <p>Power BI dashboards, DAX measures, KPI design, inventory analysis, margin reporting, and executive summaries.</p>
+            <div class="skill-tags">
+              <span>Power BI</span><span>DAX</span><span>KPIs</span><span>Dashboards</span><span>Data modeling</span>
+            </div>
           </article>
-          <article>
-            <h3>Workflow</h3>
-            <p>Jupyter, GitHub, R Markdown, reproducible reports, structured documentation.</p>
+          <article class="skill-card">
+            <span class="skill-step">04</span>
+            <h3>Documentation and communication</h3>
+            <p>README polish, final reports, presentation decks, reproducible notebooks, and clear business recommendations.</p>
+            <div class="skill-tags">
+              <span>GitHub</span><span>R Markdown</span><span>Jupyter</span><span>Reports</span><span>Storytelling</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Open to analytics, geospatial data, machine learning, and dashboard-focused opportunities.</h2>
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Ready for analytics, BI, ML, and geospatial data opportunities.</h2>
+        </div>
         <div class="contact-actions">
-          <a class="button primary" href="mailto:jammusairam3@gmail.com">jammusairam3@gmail.com</a>
-          <a class="button secondary" href="https://linkedin.com/in/jammusairam" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button secondary" href="https://github.com/SairamJammu" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="primary-button contact-link" href="mailto:jammusairam3@gmail.com">Email Me</a>
+          <a class="secondary-button contact-link" href="https://linkedin.com/in/jammusairam" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="secondary-button contact-link" href="https://github.com/SairamJammu" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer class="site-footer">
+      <span>Geospatial AI, forecasting, BI dashboards, and applied analytics portfolio.</span>
+      <span>Sairam Jammu</span>
+    </footer>
+
+    <script src="script.js?v=8"></script>
   </body>
 </html>

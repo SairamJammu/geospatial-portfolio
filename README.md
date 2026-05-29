@@ -1,18 +1,18 @@
 # Sairam Jammu Analytics Portfolio
 
-Live portfolio site for Sairam Jammu's business analytics, geospatial AI, machine learning, forecasting, and business intelligence work.
+Recruiter-ready portfolio site for Sairam Jammu's business analytics, geospatial AI, machine learning, forecasting, and business intelligence work.
 
 View the site: [sairamjammu.github.io/geospatial-portfolio](https://sairamjammu.github.io/geospatial-portfolio/)
 
 ## Portfolio Focus
 
-The site presents applied analytics work across three tracks:
+The site presents applied analytics work across three employer-facing tracks:
 
 - Geospatial intelligence and remote sensing
 - Forecasting and machine learning
 - Decision-support dashboards and business intelligence
 
-The portfolio is designed as a recruiter-facing project hub: each project highlights the problem, method, evidence, and business value quickly.
+The portfolio is designed as a recruiter-facing project hub. Each project highlights the business question, method, evidence, metrics, decision value, tools, and direct GitHub artifacts.
 
 ## Featured Projects
 
@@ -27,13 +27,14 @@ The portfolio is designed as a recruiter-facing project hub: each project highli
 
 | File | Purpose |
 |---|---|
-| `index.html` | Single-page portfolio content, project evidence, metrics, and links |
-| `styles.css` | Responsive visual system, layout, and recruiter-ready presentation styling |
-| `script.js` | Small scroll-state enhancement for the header |
+| `index.html` | Single-page portfolio content, experience signal, project evidence, metrics, and contact links |
+| `styles.css` | Responsive dark visual system inspired by professional developer portfolios |
+| `script.js` | Typed hero role, project data rendering, category filters, header state, and canvas motion |
+| `assets/images/` | Generated recruiter-ready hero and project visuals |
 
 ## Design Notes
 
-The portfolio is intentionally lightweight: static HTML, CSS, and JavaScript hosted through GitHub Pages. It is designed to make project evidence easy to scan for reviewers, recruiters, and collaborators.
+The portfolio is intentionally lightweight: static HTML, CSS, and JavaScript hosted through GitHub Pages. It is designed to make project evidence easy to scan for reviewers, recruiters, and collaborators while still feeling polished and current.
 
 ## Contact
 
