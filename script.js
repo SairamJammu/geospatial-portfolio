@@ -1,5 +1,30 @@
 const projects = [
   {
+    title: "GeoAI Traffic Intelligence Platform",
+    repo: "short-term-traffic-forecasting",
+    category: "Forecasting + ML",
+    language: "Python / PyTorch / GIS",
+    updated: "May 2026",
+    url: "https://github.com/SairamJammu/short-term-traffic-forecasting",
+    image: "https://raw.githubusercontent.com/SairamJammu/short-term-traffic-forecasting/main/results/figures/fig_full_benchmark_comparison.png",
+    problem:
+      "Urban traffic forecasting needs models that understand both time patterns and how congestion moves through connected roads.",
+    data:
+      "METR-LA traffic speed readings from 207 Los Angeles highway sensors, 5-minute intervals, adjacency data, weather features, and road metadata.",
+    methods:
+      "Python, PyTorch, LSTM, GRU, TCN, Graph WaveNet-style graph modeling, MAE/RMSE/MAPE evaluation, Plotly/Folium-style GIS visualization concepts.",
+    output:
+      "Traffic sensor map, benchmark charts, horizon comparison, notebook, presentation assets, and a planned dashboard prototype.",
+    why:
+      "Supports congestion analysis, transportation planning, sensor network monitoring, and location-aware urban decision-making.",
+    tags: ["Graph WaveNet", "METR-LA", "207 sensors", "MAE@60 3.53", "MAPE@60 9.88%"],
+    links: [
+      { label: "View Code", url: "https://github.com/SairamJammu/short-term-traffic-forecasting" },
+      { label: "Live Demo Placeholder", url: "#" },
+      { label: "Read Case Study", url: "case-studies/traffic-forecasting.html" },
+    ],
+  },
+  {
     title: "Deep Learning Road Network Extraction",
     repo: "deep-learning-road-network-extraction",
     category: "Geospatial AI",
@@ -7,63 +32,47 @@ const projects = [
     updated: "May 2026",
     url: "https://github.com/SairamJammu/deep-learning-road-network-extraction",
     image: "assets/images/road-extraction.png",
-    summary:
-      "Semantic segmentation project comparing U-Net, DeepLabV3+, PSPNet, and FPN for extracting road pixels from aerial imagery.",
-    businessQuestion:
-      "How can road networks be extracted from high-resolution aerial imagery to support mapping, planning, and infrastructure analysis?",
-    decisionValue:
-      "Shows practical geospatial AI skill: data preparation, segmentation modeling, metric comparison, and GIS-oriented interpretation.",
-    tags: ["U-Net", "DeepLabV3+", "IoU 0.2954", "F1 0.4556", "Massachusetts Roads"],
+    problem:
+      "Manual road digitization from aerial imagery is slow, expensive, and difficult to scale for large mapping programs.",
+    data:
+      "Road imagery and mask pairs used to train and evaluate semantic segmentation models for road extraction.",
+    methods:
+      "U-Net, DeepLabV3+, PSPNet, FPN, PyTorch, OpenCV-style preprocessing, IoU/F1 evaluation, and image-mask comparison.",
+    output:
+      "Model comparison, segmentation outputs, project report, and presentation evidence for automated road extraction.",
+    why:
+      "Shows practical GeoAI capability for map production, feature extraction, and infrastructure intelligence.",
+    tags: ["U-Net", "DeepLabV3+", "IoU 0.2954", "F1 0.4556", "Remote sensing"],
     links: [
-      { label: "GitHub", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction" },
-      { label: "Final Report", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-report.pdf" },
-      { label: "Presentation", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-presentation.pdf" },
+      { label: "View Code", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction" },
+      { label: "Live Demo Placeholder", url: "#" },
+      { label: "Read Case Study", url: "https://github.com/SairamJammu/deep-learning-road-network-extraction/blob/main/reports/final-report.pdf" },
     ],
-    featured: true,
-  },
-  {
-    title: "Short-Term Traffic Forecasting",
-    repo: "short-term-traffic-forecasting",
-    category: "Forecasting + ML",
-    language: "Python / PyTorch",
-    updated: "May 2026",
-    url: "https://github.com/SairamJammu/short-term-traffic-forecasting",
-    image: "https://raw.githubusercontent.com/SairamJammu/short-term-traffic-forecasting/main/results/figures/fig_full_benchmark_comparison.png",
-    summary:
-      "Spatiotemporal deep learning project forecasting Los Angeles highway speeds with METR-LA sensors, temporal baselines, and Graph WaveNet variants.",
-    businessQuestion:
-      "Can road-network graph structure improve 15, 30, and 60 minute traffic-speed forecasts compared with temporal-only models?",
-    decisionValue:
-      "Demonstrates graph neural network forecasting, benchmark thinking, model ablation, and transportation analytics communication.",
-    tags: ["Graph WaveNet", "METR-LA", "207 sensors", "MAE@60 3.53", "MAPE@60 9.88%"],
-    links: [
-      { label: "GitHub", url: "https://github.com/SairamJammu/short-term-traffic-forecasting" },
-      { label: "Notebook", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/blob/main/notebooks/short_term_traffic_forecasting_final_project.ipynb" },
-      { label: "Results", url: "https://github.com/SairamJammu/short-term-traffic-forecasting/tree/main/results" },
-    ],
-    featured: true,
   },
   {
     title: "GIS-Enhanced WOMart Sales Forecasting",
     repo: "womart-sales-forecasting-capstone",
     category: "Forecasting + ML",
-    language: "R / XGBoost",
+    language: "R / XGBoost / GIS",
     updated: "May 2026",
     url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone",
     image: "assets/images/womart-forecasting.png",
-    summary:
-      "Retail forecasting capstone extended with simulated spatial coordinates, regional summaries, Leaflet maps, and forecast-ready outputs.",
-    businessQuestion:
-      "Where is demand likely to concentrate, and how can regional sales forecasts support inventory and planning decisions?",
-    decisionValue:
-      "Connects forecasting to action by adding GIS outputs that make demand patterns easier to interpret geographically.",
-    tags: ["XGBoost", "R-squared 0.7521", "RMSE 9,279.50", "Leaflet", "GIS features"],
+    problem:
+      "Retail forecasting is more useful when decision makers can see where demand is concentrated, not only tabular predictions.",
+    data:
+      "Retail sales records with engineered regional and simulated spatial features for map-based forecasting outputs.",
+    methods:
+      "R, XGBoost, validation metrics, feature importance, Leaflet maps, regional summaries, and GIS-style output tables.",
+    output:
+      "Forecast report, interactive maps, feature importance, regional forecast summaries, and exported decision tables.",
+    why:
+      "Connects forecasting to location intelligence for inventory planning, regional performance review, and store strategy.",
+    tags: ["XGBoost", "R-squared 0.7521", "RMSE 9,279.50", "Leaflet", "GIS outputs"],
     links: [
-      { label: "GitHub", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone" },
-      { label: "GIS Report", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/blob/main/report/WOMart-GIS-Sales-Forecasting.html" },
-      { label: "Forecast Map", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/blob/main/gis-outputs/maps/forecast_sales_gis_map.html" },
+      { label: "View Code", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone" },
+      { label: "Live Demo Placeholder", url: "#" },
+      { label: "Read Case Study", url: "https://github.com/SairamJammu/womart-sales-forecasting-capstone/blob/main/report/WOMart-GIS-Sales-Forecasting.html" },
     ],
-    featured: true,
   },
   {
     title: "KNFS Operations and Sales Dashboard",
@@ -73,19 +82,22 @@ const projects = [
     updated: "May 2026",
     url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard",
     image: "assets/images/knfs-dashboard.png",
-    summary:
-      "Power BI decision-support dashboard for sales, COGS, gross margin, inventory aging, reorder priorities, and department performance.",
-    businessQuestion:
-      "What is selling, what should be reordered, and how do sales, cost, inventory, and margin summarize store performance?",
-    decisionValue:
-      "Demonstrates end-to-end BI thinking: cleaned operating data, DAX measures, executive KPIs, and buyer-ready insights.",
+    problem:
+      "Operational teams need a clear view of sales, cost, inventory, and reorder priorities without manually reviewing spreadsheets.",
+    data:
+      "Sales, cost, inventory, department, and product-level operating data transformed for Power BI reporting.",
+    methods:
+      "Power BI, DAX measures, KPI design, data modeling, dashboard layout, inventory aging, and margin analysis.",
+    output:
+      "Executive dashboard, KPIs, report package, and buyer-focused recommendations for inventory and sales decisions.",
+    why:
+      "Demonstrates business intelligence work that turns raw operating data into decisions managers can act on.",
     tags: ["Power BI", "DAX", "$223K sales", "$87K gross margin", "41% margin"],
     links: [
-      { label: "GitHub", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard" },
-      { label: "Dashboard PBIX", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/dashboard/KNFS_Dashboard.pbix" },
-      { label: "Report", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/Presentation/KNFS_Report.pdf" },
+      { label: "View Code", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard" },
+      { label: "Live Demo Placeholder", url: "#" },
+      { label: "Read Case Study", url: "https://github.com/SairamJammu/knfs-operations-sales-dashboard/blob/main/Presentation/KNFS_Report.pdf" },
     ],
-    featured: true,
   },
   {
     title: "IMDB Sentiment Neural Networks",
@@ -95,27 +107,28 @@ const projects = [
     updated: "May 2026",
     url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks",
     image: "assets/images/nlp-sentiment.png",
-    summary:
-      "Advanced machine learning coursework evidence set focused on IMDB sentiment analysis, neural-network concepts, and technical reporting.",
-    businessQuestion:
-      "How can text data be transformed into sentiment signals that support review analysis and classification workflows?",
-    decisionValue:
-      "Shows notebook experimentation, NLP preprocessing, neural-network modeling concepts, evaluation, and report communication.",
-    tags: ["NLP", "Text classification", "Neural networks", "Jupyter", "Technical reports"],
+    problem:
+      "Text reviews can contain useful opinion signals, but they must be converted into structured features for classification.",
+    data:
+      "IMDB movie review text used for sentiment classification experimentation and technical reporting.",
+    methods:
+      "Notebook-based preprocessing, neural-network concepts, text classification workflow, and model evaluation.",
+    output:
+      "Coursework notebook, report artifacts, and documented model experimentation.",
+    why:
+      "Shows ability to structure machine learning experiments and communicate technical results clearly.",
+    tags: ["NLP", "Text classification", "Neural networks", "Jupyter", "Model reporting"],
     links: [
-      { label: "GitHub", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks" },
-      { label: "Assignment Folder", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks/tree/main/Assignment-2" },
+      { label: "View Code", url: "https://github.com/SairamJammu/imdb-sentiment-neural-networks" },
+      { label: "Live Demo Placeholder", url: "#" },
+      { label: "Read Case Study Placeholder", url: "#" },
     ],
-    featured: false,
   },
 ];
 
 const header = document.querySelector(".site-header");
-const featuredProjects = document.querySelector("#featuredProjects");
 const projectGrid = document.querySelector("#projectGrid");
-const trafficProjectSpotlight = document.querySelector("#trafficProjectSpotlight");
 const filterButtons = document.querySelectorAll(".filter-button");
-const focusCards = document.querySelectorAll("[data-focus-filter]");
 const typedRole = document.querySelector("#typedRole");
 const heroCanvas = document.querySelector("#heroCanvas");
 
@@ -123,13 +136,15 @@ function setHeaderState() {
   header.classList.toggle("is-scrolled", window.scrollY > 24);
 }
 
-function projectCard(project, featured = false) {
+function projectCard(project) {
   const card = document.createElement("article");
-  card.className = featured ? "featured-card" : "project-card";
+  card.className = "project-card";
   card.dataset.category = project.category;
 
   card.innerHTML = `
-    <div class="project-image" style="background-image: linear-gradient(rgba(7, 16, 19, 0.08), rgba(7, 16, 19, 0.42)), url('${project.image}')"></div>
+    <div class="project-image" style="background-image: linear-gradient(rgba(7, 16, 19, 0.08), rgba(7, 16, 19, 0.42)), url('${project.image}')">
+      <span class="image-label">${project.repo === "short-term-traffic-forecasting" ? "Map + forecast preview" : "Project screenshot preview"}</span>
+    </div>
     <div class="card-body">
       <div class="project-meta">
         <span>${project.category}</span>
@@ -137,14 +152,18 @@ function projectCard(project, featured = false) {
         <span>${project.updated}</span>
       </div>
       <h3><a class="project-title-link" href="${project.url}" target="_blank" rel="noreferrer">${project.title}</a></h3>
-      <p>${project.summary}</p>
-      <div class="impact-list">
-        <p><strong>Business question:</strong> ${project.businessQuestion}</p>
-        <p><strong>Decision value:</strong> ${project.decisionValue}</p>
+      <div class="case-fields">
+        <p><strong>Problem:</strong> ${project.problem}</p>
+        <p><strong>Data:</strong> ${project.data}</p>
+        <p><strong>Methods / Tools:</strong> ${project.methods}</p>
+        <p><strong>Output / Result:</strong> ${project.output}</p>
+        <p><strong>Why it matters:</strong> ${project.why}</p>
       </div>
       <div class="tag-list">${project.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
       <div class="card-actions">
-        ${project.links.map((link) => `<a class="card-link" href="${link.url}" target="_blank" rel="noreferrer">${link.label}</a>`).join("")}
+        ${project.links
+          .map((link) => `<a class="card-link${link.url === "#" ? " is-placeholder" : ""}" href="${link.url}" ${link.url === "#" ? "" : 'target="_blank" rel="noreferrer"'}>${link.label}</a>`)
+          .join("")}
       </div>
     </div>
   `;
@@ -155,7 +174,6 @@ function projectCard(project, featured = false) {
 function renderProjects(filter = "all") {
   projectGrid.innerHTML = "";
   projects
-    .filter((project) => project.repo !== "short-term-traffic-forecasting")
     .filter((project) => filter === "all" || project.category === filter)
     .forEach((project) => projectGrid.appendChild(projectCard(project)));
 }
@@ -164,15 +182,8 @@ function setActiveFilter(filter) {
   filterButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.filter === filter);
   });
-  if (trafficProjectSpotlight) {
-    trafficProjectSpotlight.hidden = !(filter === "all" || filter === "Forecasting + ML");
-  }
   renderProjects(filter);
 }
-
-projects
-  .filter((project) => project.featured)
-  .forEach((project) => featuredProjects.appendChild(projectCard(project, true)));
 
 renderProjects();
 setHeaderState();
@@ -182,16 +193,11 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => setActiveFilter(button.dataset.filter));
 });
 
-focusCards.forEach((card) => {
-  card.addEventListener("click", () => setActiveFilter(card.dataset.focusFilter));
-});
-
 const roles = [
-  "Geospatial AI Analyst",
-  "Business Intelligence Builder",
-  "Forecasting and ML Practitioner",
-  "Traffic Analytics Modeler",
-  "Decision Analytics Professional",
+  "Geospatial Data Analyst",
+  "GeoAI Practitioner",
+  "Spatial ML Builder",
+  "GIS + Python Analyst",
 ];
 
 let roleIndex = 0;
@@ -231,12 +237,12 @@ function animateHeroCanvas() {
   if (!heroCanvas) return;
 
   const context = heroCanvas.getContext("2d");
-  const particles = Array.from({ length: 58 }, () => ({
+  const particles = Array.from({ length: 54 }, () => ({
     x: Math.random(),
     y: Math.random(),
-    radius: Math.random() * 2.2 + 0.6,
-    speed: Math.random() * 0.18 + 0.05,
-    alpha: Math.random() * 0.4 + 0.25,
+    radius: Math.random() * 2.1 + 0.6,
+    speed: Math.random() * 0.16 + 0.04,
+    alpha: Math.random() * 0.35 + 0.22,
   }));
 
   function resize() {
